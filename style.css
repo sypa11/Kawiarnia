@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Montserrat:ital,wght@0,500;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Montez&family=Montserrat:ital,wght@0,500;1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montez', cursive;
+
+}
+.header-container a{
+    text-decoration: none;
+    color: white;
+}
+.header-container{
+    background-color: rgba(41, 26, 26, 1);
+    color: white;
+    padding: 30px;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+.header-container.scrolled{
+    position:sticky;
+    z-index: 1;
+    top: 0;
+    
+}
+
+.slider{
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+}
+.slider ul li img{
+    width: 100%;
+    height: 1000px;
+}
+.slider-container{
+    z-index: 0;
+}
+.overlay{
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    color: white;
+    font-size: 50px;
+    align-items: center;
+    padding: 90px;
+    Font-family: 'Lemon', serif;
+    z-index: 1;
+    
+}
+.contact{
+    display: flex;
+    float: right;
+}
+.header-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-title:hover{
+    cursor: pointer;
+}
+
+.header-menu{
+    padding-right: 20px;
+    margin-left: auto;
+    display: flex;
+    font-size: 27px;
+    
+}
+.header-menu p{
+    margin-right: 30px;
+}
+.header-menu p:hover{
+    font-size: 30px;
+    transform: skewX(-10deg);
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    
+}
+.header-menu p::after{
+    content: '';
+    height: 2px;
+    width: 50px;
+    display: block;
+    background-color:rgb(182, 155, 106) ;
+    position: absolute;
+    left: calc(50% - 25px);    
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    transform-origin: left;
+    bottom: -2px
+}
+.header-menu p:hover::after{
+    transform: scale(1);
+}
+
+.slider-unslider-horizontal a{
+    display: none;
+}
+
+.second{
+    margin: 30px 0;
+}
+.third{
+    margin-bottom: 30px;
+}
+
+.about-place-container{
+    box-sizing: border-box;
+
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.place{
+    display: flex;
+    margin-top: 70px;
+    font-size: 70px;
+    justify-content: center;
+}
+.about-place-description{
+    display: flex;
+    margin-top:80px;
+    font-size: 33px;
+    
+}
+.about-place-description img{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    margin-right: 60px;
+    border-radius: 10px;
+}
+.map-container{
+
+    height: 730px;
+    width: 100%;
+
+}
+.map iframe{
+    margin-top: 100px;
+}
+.footer-container{
+
+    height: 300px;
+    width: 100%;
+    background-color: rgb(180, 175, 175);
+    margin-left: auto;
+    font-family:'Courier New', Courier, monospace;
+    padding: 10px;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    margin-top: 100px;
+}
+.address{
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+}
+.phone-number{
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+.socials a{
+    color: gray;
+    font-size: 30px;
+    padding: 5px 10px;
+}
+.socials a:hover{
+    cursor: pointer;
+    color: black;
+    transition: 0.3s;
+    
+    
+}
+.unslider-arrow{
+    display: none;
+}
+
+
+
